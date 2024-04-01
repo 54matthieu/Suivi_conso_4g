@@ -6,19 +6,6 @@ conso_max = input("Quelle est votre consommation max par mois ? ")
 conso_restant = input("A combien est votre consommation aujourd'hui ? ")
 
 
-"""try:
-    FileNotFoundError:
-    with open('conso.txt', 'r') as file:
-        first_line = file.readline(0)
-        if not first_line:
-                with open('conso.txt', 'w') as file:
-                        file.write(f"{conso_max}\n")
-
-except:
-    with open('conso.txt', 'a') as file:
-# Le fichier est vide, écrire à la ligne suivante ici
-        file.write(f"{conso_max}\n")"""
-
 def creer_fichier_conso_max(nom_fichier, conso_max):
     # Vérifie si le fichier existe
     if not os.path.isfile('conso.txt'):
