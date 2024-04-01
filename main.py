@@ -24,7 +24,7 @@ def creer_fichier_conso_max(nom_fichier, conso_max):
                 breakpoint
 
 
-# Exemple d'utilisation
+# Fonction créer fichier ou première ligne
 creer_fichier_conso_max('conso.txt', 200)
 
 
@@ -51,7 +51,7 @@ print(f"Aujourd'hui elle est de : {conso_restant} Go.")
 print(f"vous avez utilisé {conso_today_int} Go.")
 
 
-# Ouvrir le fichier en mode écriture
+# Ouvrir le fichier en mode écriture et écrit la consommation
 with open('conso.txt', 'a') as file:
     file.write(f"Consommation du {date} est de :\n")
     file.write(f"Consommation max : {conso_max} Go.\n")
