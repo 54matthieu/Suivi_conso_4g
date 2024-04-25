@@ -23,9 +23,8 @@ def creer_fichier_conso_max(nom_fichier, conso_max):
             else:
                 breakpoint
 
-
 # Fonction créer fichier ou première ligne
-creer_fichier_conso_max('conso.txt', 200)
+creer_fichier_conso_max('conso.txt', conso_max)
 
 
 #Récup la dernière ligne du fichier texte
